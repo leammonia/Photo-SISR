@@ -1,0 +1,264 @@
+#background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    z-index: -100;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    zoom: 1;
+}
+#cover {
+    position:fixed;   
+    left:0; 
+    top:0; 
+    z-index:-100; 
+    width:100%; 
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#logo {
+    position: fixed;
+    margin-top: -251px;
+    margin-left: -55px;
+    z-index: -80;
+    width: 726px;
+    height: 215px;
+    opacity: 0.9;
+}
+#filetext {
+    position:fixed;
+    left: 30%;
+    top: 42%;
+    width: 626px;
+    height: 60px;
+    z-index: -20;
+    border-radius: 30px;
+    background-color: rgba(174, 230, 226, 0.5);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+#icon-pic {
+    position: fixed;
+    margin-left: 40px;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+#path {
+    position: fixed;
+    margin-left: 98px;
+    margin-top: 18px;
+    width: 317px;
+    height: 24px;
+    z-index: -10;
+    color: rgba(155, 155, 155, 1);
+    font-size: 16px;
+    text-align: left;
+    font-family: Roboto;
+    background-color:transparent;
+    border-style: none;
+    outline: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#tips {
+    position: fixed;
+    margin-left: 52px;
+    margin-top: 69px;
+    width: 565px;
+    height: 24px;
+    z-index: -10;
+    color: rgba(155, 155, 155, 1);
+    font-size: 16px;
+    text-align: left;
+    font-family: Roboto;
+    background-color:transparent;
+    border-style: none;
+    outline: none;
+}
+#icon-attention {
+    position: fixed;
+    margin-top: 227px;
+    margin-left: 80px;
+}
+#zhuyishixiang {
+    position: fixed;
+    margin-left: 105px;
+    margin-top: 227px;
+    width: 470px;
+    height: 123px;
+    color: rgba(250, 105, 0, 1);
+    font-size: 18px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+}
+.button {
+    line-height: 50px;
+    border-radius: 30px 30px 30px 30px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    text-decoration: none;
+    font-family: Roboto;
+    opacity: 0.85;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.4s;
+    outline: none;
+}
+.button:hover {
+    box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+.button:active {
+    box-shadow: none;
+    text-decoration: none;
+    opacity: 1;
+}
+#selectpic {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 491px;
+    width: 135px;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgba(116, 232, 225, 1);
+    font-size: 16px;
+    outline: none;
+    pointer-events: auto;
+}
+#selectpic:hover {
+    background-color: rgba(33, 219, 207, 1);
+}
+.myFileUpload {
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+    width: 135px;
+    height: 60px;
+    opacity: 0;
+}
+#uploadpic {
+    position:fixed;
+    margin-top: 125px;
+    margin-left: -223px;
+    width: 446px;
+    height: 60px;
+    background-color: rgba(243, 134, 48, 1);
+    font-size: 20px;
+    pointer-events: auto;
+}
+#uploadpic:hover {
+    background-color: rgb(250, 96, 0, 1);
+}
+.msgbox {
+    position:fixed;
+    left: 29.8%;
+    top: 36.8%;
+    width: 631px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);    
+}
+.msg {
+    margin-left: 286px;
+    width: 250px;
+    height: 43px;
+    color: rgba(164, 164, 164, 1);
+    font-size: 28px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+}
+#waiting {
+    height: 223px;
+    border: 3px solid rgba(250, 105, 0, 1);
+    display: none;
+}
+#icon-waiting {
+    position: fixed;
+    margin-left: 154px;
+    margin-top: 59px;
+    opacity: 0.8;
+}
+#error {
+    height: 247px;
+    border: 3px solid rgba(255, 78, 80, 1);
+    display: none;
+}
+#icon-error {
+    position: fixed;
+    margin-left: 165px;
+    margin-top: 50px;
+    opacity: 0.8;
+}
+#success {
+    height: 247px;
+    border: 3px solid rgba(105, 210, 231, 1);
+    display: none;
+}
+#icon-success {
+    position: fixed;
+    margin-left: 165px;
+    margin-top: 50px;
+    opacity: 0.8;
+}
+#reuploadpic {
+    margin-left: 0px;
+    margin-top: 38px;
+    width: 446px;
+    height: 60px;
+    background-color: rgba(251, 108, 109, 1);
+    font-size: 20px; 
+}
+#reuploadpic:hover {
+    background-color: rgba(225, 78, 80, 1);
+}
+#downloadpic {
+    margin-left: 0px;
+    margin-top: 33px;
+    width: 446px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(134, 234, 228, 1);
+    font-size: 20px;
+}
+#downloadpic:hover {
+    background-color: rgba(126, 219, 213, 1);
+}
+#select-enlargement {
+    position: fixed;
+    margin-left: 420px;
+    margin-top: 8px;
+    width: 65px;
+    height: 20px;
+    color: rgba(50, 200, 230, 1);
+    font-size: 16px;
+    text-align: center;
+    font-family: SourceHanSansSC-regular;
+    outline: none;
+    border-style: none;
+}
+#enlargement {
+    position: fixed;
+    margin-left: 107px;
+    margin-top: 27px;
+    width: 65px;
+    height: 33px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(155, 155, 155, 1);
+    font-size: 16px;
+    font-family: Roboto;
+    text-align: left;
+    padding-left: 10px;
+    outline: none;
+    border-style: none;
+    pointer-events: auto;
+    opacity: 0.8;
+}
+#enlargement:hover {
+    color: rgba(50, 200, 230, 1);
+    opacity: 1;
+}

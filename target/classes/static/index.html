@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+<meta http-equiv="Cache" content="no-cache">
+<title>Photo4x-图像超分辨率放大系统</title>
+<link rel="stylesheet" type="text/css" href="css/ui.css" />
+<link rel="stylesheet" type="text/css" href="css/bubblebg.css" />
+<link rel="icon" href="logo.ico" />
+
+<script type="text/javascript" src="js/sketch.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js" ></script>
+<script type="text/javascript" src="js/upload.js"></script>
+</head>
+
+<body id="body">
+    <div id="fireworks" style="position:fixed;top:0px;z-index:-20;"></div>
+    <div id="background">
+        <img src="src/bg.png" width="100%" height="100%"/>
+    </div>
+    <div id="cover"></div> 
+        
+    <div id="filetext">
+        <div id="logo">
+            <img src="src/logo.png"/>
+        </div>
+        <div id="path">请选择要上传的图片...</div>
+
+        <div id="selectpic" class="button">
+            <span>选 择 图 片</span>
+            <input type="file" class="myFileUpload"/>
+        </div>
+        <div id="tips"></div>
+        <button id="uploadpic" class="button" type="button">确 认 上 传</button> 
+                
+        <div id="icon-pic">
+            <img src="src/icon_pic.png" width="31px" height="31px"/>
+        </div>        
+        
+        <div id="select-enlargement">放大倍数</div>
+        <select id="enlargement"></select>
+
+        <div id="icon-attention">
+            <img src="src/icon_attention.png" width="24px" height="24px"/>
+        </div>
+        <div id="zhuyishixiang"></div>
+    </div>
+
+    <div id="waiting" class="msgbox">        
+        <div id="icon-waiting">
+            <img src="src/waiting.gif" width="104px" height="104px"/>
+        </div>  
+        <div class="msg" style="margin-top: 90px;">图片处理中……</div>
+    </div>
+
+    <div id="error" class="msgbox">
+        <div id="icon-error">
+            <img src="src/error.png" width="94px" height="94px"/>
+        </div>
+        <div id= "errormsg" class="msg" style="margin-top: 70px;">错误消息</div>
+        <button id="reuploadpic" class="button" type="button">重 新 上 传</button>
+    </div>
+
+    <div id="success" class="msgbox">
+        <div id="icon-success">
+            <img src="src/finish.png" width="94px" height="94px"/>
+        </div>
+        <div class="msg" style="margin-top: 80px;">处理完成！</div>
+        <button id="downloadpic" class="button" type="button">下 载 图 片</button> 
+    </div>
+
+    <div class="controls">
+        <input class="controls__slider" data-slider type="range" min="100" max="500" step="1" value="100"/>
+    </div>
+
+    <script type="text/javascript" src="js/bubblebg.js"></script>
+    <script type="text/javascript" src="js/fireworks.js"></script>
+</body>
+</html>
