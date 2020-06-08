@@ -1,0 +1,6 @@
+在该文件夹下运行
+mvn compile
+mvn package spring-boot:repackage
+
+target文件夹下生成的SRserver-0.0.1-SNAPSHOT.jar即为可执行jar文件
+运行Photo4x-SISR系统仅需server.properties和RankSRGAN、target文件夹
